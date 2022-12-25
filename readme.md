@@ -27,3 +27,32 @@ The Amazon clone website will have many of the same features as the real Amazon 
 - A checkout page that allows users to enter their payment and shipping information, and place their order
 - An account page that allows users to view and edit their personal information, and view their order history
 
+## Run Locally
+
+📝 Clone the project
+
+```bash
+  git clone https://link-to-project
+```
+
+📂 Go to the project directory 
+```bash
+  cd my-project
+```
+
+The `frontend` folder houses the `npm` project. Go to that directory. 
+```
+cd frontend
+```
+
+⤵️ Install dependencies
+
+```bash
+  npm install
+```
+
+🥳 Start the server
+
+```bash
+  npm run start
+```
