@@ -1,0 +1,71 @@
+
+/*Global Related CSS*/
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}  
+html{
+    /*Default size = 16px; 16*62.5% = 10px = 1rem */
+    font-size: 62.5%;
+}
+
+body{
+    height: 100vh;
+    font: 1.4rem Inter, sans-serif, Helvetica, Arial;
+    margin: 0;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas:
+        'header'
+        'main'
+        'footer';
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem 1fr 5rem;
+    height: 100%;
+}
+
+/*Header Related CSS*/
+header{
+    grid-area: header;
+    background-color: #2a2f35;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+header div a img{
+    max-width: 15rem;
+}
+
+header a:hover{
+    filter: brightness(0) saturate(100%) invert(53%) sepia(98%) saturate(748%) hue-rotate(6deg) brightness(103%) contrast(98%);
+}
+
+header div.lhs a{
+    padding-left: 2rem;
+    color: whitesmoke;
+    font-weight: 500;
+}
+
+
+/*Footer related CSS*/
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font: 1.2rem Inter;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color:   #2a2f35;
+    color: #637372;
+    text-align: center;
+}
+
+footer img{
+    max-width: 8rem;
+}
